@@ -1,0 +1,17 @@
+#header-container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  border-bottom: 2px solid black;
+}
+
+#logo {
+  width: 50%;
+  text-decoration: none;
+}
+
+#create-login-container {
+  display: flex;
+  flex-direction: row;
+  width: 50%;
+}
