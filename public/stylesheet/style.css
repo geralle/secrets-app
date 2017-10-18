@@ -15,3 +15,27 @@
   flex-direction: row;
   width: 50%;
 }
+
+#main-container{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  border: 2px solid black;
+}
+
+#create-user{
+  height: 50px;
+}
+
+#login-user{
+  height: 50px;
+}
+
+#account-create{
+  width: 25%;
+}
+
+#account-login{
+  width: 25%;
+  margin: 74px 0 0 35px;
+}
