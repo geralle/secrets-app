@@ -1,0 +1,26 @@
+{
+  "name": "galvanize-secrets-fs",
+  "version": "1.0.0",
+  "description": "Everybody has secrets, its time to track them in a centralized way. In this project you will create a full-stack application where users will keep their secrets and keep track of who knows them.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/geralle/secrets-app.git"
+  },
+  "author": "Geralle Estes",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/geralle/secrets-app/issues"
+  },
+  "homepage": "https://github.com/geralle/secrets-app#readme",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2",
+    "hbs": "^4.0.1",
+    "knex": "^0.13.0",
+    "pg": "^7.3.0"
+  }
+}
