@@ -19,6 +19,11 @@ function generateRandomCode(){
   return code;
 }
 
+function getUsersCode(id){
+  return db.select('*').from(users).where('id',id)
+}
+
 module.exports = {
-  submitAccount
+  submitAccount,
+  getUsersCode
 }
