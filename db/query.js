@@ -20,10 +20,33 @@ function generateRandomCode(){
 }
 
 function getUsersCode(id){
-  return db.select('*').from(users).where('id',id)
+  return db.select('code').from('users').where('id',id)
+}
+
+function loggedIn(user_code){
+  return db.select('*').from('users').innerJoin('users.id', 'secrets.id').where('code',user_code)
+}
+
+function getAllUsers(){
+  return db.select('username').from('users')
+}
+
+function submitSecret(data){
+  return db('secrets')
+    .insert({
+      secret: data.secret
+    })
+}
+
+function whoKnows(username){
+  return db('*','users.id AS user_id','secrets.id AS secrets_id').from('users').innerJoin('secrets','users.id','secrets.id').where('code',username)
 }
 
 module.exports = {
   submitAccount,
-  getUsersCode
+  getUsersCode,
+  loggedIn,
+  getAllUsers,
+  submitSecret,
+  whoKnows
 }

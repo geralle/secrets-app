@@ -6,7 +6,8 @@ const queries = require('../db/query')
 
 router.get('/', (req, res, next) =>{
   res.render('index',{
-    title: 'Galvanize Secrets'
+    title: 'GS',
+    pageheader: 'Galvanize Secrets'
   })
 })
 

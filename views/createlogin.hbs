@@ -14,6 +14,7 @@
     </header>
     <div id="main-container">
       <form id="account-create" method="POST" action="/createlogin">
+        <h3>{{pageheader}}</h3>
         <div class="form-group">
           <label for="usr">Username</label>
           <input type="text" class="form-control" name="username" id="username">
@@ -25,13 +26,14 @@
         <button type="submit" class="btn btn-primary" id="create-button">Create Account</button>
       </form>
       <form id="account-login">
+        <h3>{{pageheader}}</h3>
         <div class="form-group">
           <label for="pwd">Code</label>
           <input type="password" class="form-control" id="account-code">
         </div>
-        <button type="submit" name="button" class="btn btn-primary">Login</button>
+        <button type="submit" name="button" class="btn btn-primary" id="login-button">Login</button>
       </form>
     </div>
-    <script src="/javascript/main.js" charset="utf-8"></script>
+    <script src="/javascript/createlogin.js" charset="utf-8"></script>
   </body>
 </html>
