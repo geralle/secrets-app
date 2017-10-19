@@ -1,6 +1,5 @@
 // Update with your config settings.
-var dotenv = require('dotenv');
-dotenv.load();
+require('dotenv').config()
 const environment = process.env.NODE_ENV || 'development'
 
 module.exports = {

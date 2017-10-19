@@ -10,4 +10,17 @@ router.get('/', (req, res, next) => {
   })
 })
 
+router.post('/', (req, res, next) => {
+  queries.submitAccount(req.body)
+    .then(data=>{
+      res.json(data)
+    }).catch(err =>{
+      console.log(err)
+    })
+})
+
+router.post('/:id', (req, res, next) => {
+
+})
+
 module.exports = router;
